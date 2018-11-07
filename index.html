@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset = "utf-8">
+  <title>BusyBus</title>
+  <meta name="description" content="BusyBus">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belleza">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700">
+</head>
+
+<body>
+  <div class="systemBars systemBarTop">
+    <p class="clock">12:30</p>
+  </div>
+
+  <div class="appBars appBarTop">
+    <div class="menuContainer">
+      <img class="hamburger" src="images/hamburger.svg" alt="menu">
+      <a href="#"><img class="bell" src="images/bellAlert.svg" alt="alert"></a>
+      <a href="#"><img class="query" src="images/query.svg" alt="search"></a>
+    </div>
+  </div>
+
+  <div class="stopInfo">
+    <h4 class="currentStop">Current stop</h4>
+    <h1>
+      <span class="stopName">Washington & State</span> <span class="trafficDir">(westbound)</span>
+    </h1>
+  </div>
+
+  <div class="main">
+      <!-- start of table -->
+      <ul class="flexTable tabHead">
+        <li class="routeCol">Route</li>
+        <li class="destCol">Destination</li>
+        <li class="etaCol">ETA</li>
+      </ul>
+      <!-- buses -->
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">60</span> <span class="busDir">(E)</span></li>
+        <li class="dest">Randolph/Harbor Dr</li>
+        <li class="etaCol"><span class="minUntil">4</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">6</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">151</span> <span class="busDir">(N)</span></li>
+        <li class="destCol dest">Devon/Clark</li>
+        <li class="etaCol"><span class="minUntil">7</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">J14</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">103rd/Stony Island</li>
+        <li class="etaCol"><span class="minUntil">9</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">10</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">16</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">20</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">151</span> <span class="busDir">(N)</span></li>
+        <li class="destCol dest">Devon/Clark</li>
+        <li class="etaCol"><span class="minUntil">23</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">J14</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">103rd/Stony Island</li>
+        <li class="etaCol"><span class="minUntil">24</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">60</span> <span class="busDir">(E)</span></li>
+        <li class="destCol dest">Randolph/Harbor Dr</li>
+        <li class="etaCol"><span class="minUntil">24</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">26</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">30</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">36</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">151</span> <span class="busDir">(N)</span></li>
+        <li class="destCol dest">Devon/Clark</li>
+        <li class="etaCol"><span class="minUntil">39</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">J14</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">103rd/Stony Island</li>
+        <li class="etaCol"><span class="minUntil">39</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
+        <li class="destCol dest">Navy Pier</li>
+        <li class="etaCol"><span class="minUntil">40</span> <span class="mins">min</span></li>
+      </ul>
+      <ul class="flexTable lastRow">
+        <li class="routeCol"><span class="route">60</span> <span class="busDir">(E)</span></li>
+        <li class="destCol dest">Randolph/Harbor Dr</li>
+        <li class="etaCol"><span class="minUntil">44</span> <span class="mins">min</span></li>
+      </ul>
+      <!-- end table -->
+
+      <!-- table list format
+      <ul class="flexTable tableRow">
+        <li class="routeCol"><span class="route"></span> <span class="busDir">()</span></li>
+        <li class="destCol dest"></li>
+        <li class="etaCol"><span class="minUntil"></span> <span class="mins">min</span></li>
+      </ul>
+      -->
+    </div>
+    <div class="arrow">
+      <img class="downArrow" src="images/downArrow.svg">
+    </div>
+    <div class= "appBars appBarBottom">
+        <img class="screenIndic" src="images/screenIndicator.svg">
+    </div>
+    <div class= "systemBars systemBarBottom">
+      <div class="sysContainer">
+          <a href="#"><img class="triSysButton" src="images/triangle.svg"></a>
+          <a href="#"><img class="cirSysButton" src="images/circle.svg"></a>
+          <a href="#"><img class="sqrSysButton" src="images/square.svg"></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

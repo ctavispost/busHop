@@ -1,0 +1,232 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  width: 360px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 10px 20px;
+}
+
+.flexTable {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: : row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tableRow {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #888;
+  margin-bottom: 10px;
+}
+
+.lastRow {
+  padding-bottom: 20px;
+  margin-bottom: 75px;
+}
+
+.systemBars {
+  background-color: #035511;
+  width: 100%;
+}
+
+.appBars {
+  background-color: #5FB75E;
+  width: 100%;
+}
+
+.systemBarTop {
+  width: 100%;
+  /*background: #035511 url("../images/androidStatusBar.svg") no-repeat fixed right;*/
+  position: sticky;
+  top: 0;
+  background-image: url("../images/androidStatusBar.svg");
+  background-size: 6em;
+  background-position: 98.6%;
+  background-repeat: no-repeat;
+}
+
+.appBarTop {
+  position: sticky;
+  top: 2.4em;
+}
+
+.systemBarBottom {
+  height: 48px;
+  width: 360px;
+  position: fixed;
+  bottom: 0;
+}
+
+.appBarBottom {
+  height: 2.5em;
+  width: 360px;
+  text-align: center;
+  position: fixed;
+  bottom: 4.8em;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  height: 6em;
+  justify-content: flex-end;
+}
+
+.routeCol {
+  width: 20%;
+}
+
+.destCol {
+  width: 59%;
+}
+
+.etaCol {
+  width: 20%;
+  margin-left: auto;
+  text-align: right;
+}
+
+.stopInfo {
+  width: 100%;
+  padding: 12px 20px;
+  position: sticky;
+  top: 8.4em;
+  background-color: #fff;
+}
+
+.currentStop {
+  font-size: 1.4em;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.stopName {
+  font-family: Optima, 'Belleza', sans-serif;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.trafficDir {
+  font-family: Optima, 'Belleza', sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  width: 59%;
+}
+
+.tabHead {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.route {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.minUntil {
+ font-size: 1.6em;
+ font-weight: 600;
+ display: inline-block;
+}
+
+.mins {
+  font-size: 1.6em;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.busDir {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.dest {
+  font-size: 1.4em;
+}
+
+.hamburger {
+  margin-left: 2em;
+  width: 1.8em;
+  margin-right: auto;
+}
+
+.bell {
+  margin-right: .5em;
+  width: 1.7em;
+  height: auto;
+}
+
+.query {
+  margin-left: .5em;
+  margin-right: 2em;
+  width: 1.9em;
+  height: auto;
+}
+
+.clock {
+  color: #DAE6DC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  weight: 700;
+  padding: .7em 0 .7em .5em;
+  width: 100%;
+}
+
+.arrow {
+  width: 36em;
+  position: fixed
+  display: inline-block;
+}
+.downArrow {
+  width: 10px;
+  height: 5px;
+  padding: 10px 50%;
+  bottom: 7.2em;
+  background-color: #333;
+}
+
+.screenIndic {
+  width: 25px;
+  height: auto;
+  padding: 10px 0;
+  display:inline-block;
+}
+
+.sysContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.8em;
+}
+
+.triSysButton {
+  width: 16px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.cirSysButton {
+  width: 16px;
+  height: auto;
+}
+
+.sqrSysButton {
+  width: 16px;
+  height: auto;
+  margin-right: 20px;
+}
