@@ -189,15 +189,16 @@ body {
 
 .arrow {
   width: 36em;
-  position: fixed
-  display: inline-block;
+  height: 2.5em;
+  position: fixed;
+  bottom: 6.8em;
 }
 .downArrow {
   width: 10px;
   height: 5px;
-  padding: 10px 50%;
-  bottom: 7.2em;
-  background-color: #333;
+  padding: 10px 48.61%;
+  background-color: #888;
+  display: inline-block;
 }
 
 .screenIndic {
