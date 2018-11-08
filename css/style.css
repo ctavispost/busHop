@@ -1,6 +1,3 @@
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif; */
-
 body {
   background-color: #fff;
   color: #000;
@@ -14,27 +11,13 @@ body {
 }
 
 .main {
-  margin: 10px 20px;
-}
-
-.flexTable {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: : row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.tableRow {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #888;
-  margin-bottom: 10px;
-}
-
-.lastRow {
-  padding-bottom: 20px;
-  margin-bottom: 75px;
+  margin: 10px 20px 10px 20px;
+  padding-bottom: 30px;
+  height: calc(100vh - 230px);
+  overflow-y: scroll;
+  position:fixed;
+  top: 142px;
+  width: 320px;
 }
 
 .systemBars {
@@ -49,7 +32,6 @@ body {
 
 .systemBarTop {
   width: 100%;
-  /*background: #035511 url("../images/androidStatusBar.svg") no-repeat fixed right;*/
   position: sticky;
   top: 0;
   background-image: url("../images/androidStatusBar.svg");
@@ -58,24 +40,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.clock {
+  color: #DAE6DC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  weight: 700;
+  padding: .7em 0 .7em .5em;
+  width: 100%;
+}
+
 .appBarTop {
   position: sticky;
-  top: 2.4em;
-}
-
-.systemBarBottom {
-  height: 48px;
-  width: 360px;
-  position: fixed;
-  bottom: 0;
-}
-
-.appBarBottom {
-  height: 2.5em;
-  width: 360px;
-  text-align: center;
-  position: fixed;
-  bottom: 4.8em;
+  top: 24px;
+  box-shadow: 0 4px 4px -3px rgba(0,0,0,0.5);
+  z-index: 4px;
+  margin-bottom: 10px;
 }
 
 .menuContainer {
@@ -83,80 +62,6 @@ body {
   align-items: center;
   height: 6em;
   justify-content: flex-end;
-}
-
-.routeCol {
-  width: 20%;
-}
-
-.destCol {
-  width: 59%;
-}
-
-.etaCol {
-  width: 20%;
-  margin-left: auto;
-  text-align: right;
-}
-
-.stopInfo {
-  width: 100%;
-  padding: 12px 20px;
-  position: sticky;
-  top: 8.4em;
-  background-color: #fff;
-}
-
-.currentStop {
-  font-size: 1.4em;
-  font-weight: 300;
-  padding-top: 10px;
-}
-
-.stopName {
-  font-family: Optima, 'Belleza', sans-serif;
-  font-size: 2.4em;
-  font-weight: 700;
-}
-
-.trafficDir {
-  font-family: Optima, 'Belleza', sans-serif;
-  font-size: 1.6em;
-  font-weight: 400;
-  width: 59%;
-}
-
-.tabHead {
-  font-size: 1.4em;
-  font-weight: 300;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.route {
-  font-size: 1.6em;
-  font-weight: 600;
-}
-
-.minUntil {
- font-size: 1.6em;
- font-weight: 600;
- display: inline-block;
-}
-
-.mins {
-  font-size: 1.6em;
-  font-weight: 300;
-  display: inline-block;
-}
-
-.busDir {
-  font-size: 1.6em;
-  font-weight: 400;
-}
-
-.dest {
-  font-size: 1.4em;
 }
 
 .hamburger {
@@ -178,27 +83,122 @@ body {
   height: auto;
 }
 
-.clock {
-  color: #DAE6DC;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  weight: 700;
-  padding: .7em 0 .7em .5em;
+.stopInfo {
   width: 100%;
+  padding: 0 20px;
+  position: sticky;
+  top: 8.5em;
+  background-color: #fff;
+  z-index: 1px;
 }
 
-.arrow {
-  width: 36em;
-  height: 2.5em;
-  position: fixed;
-  bottom: 6.8em;
+.currentStop {
+  font-size: 1.4em;
+  line-height: 1.43
+  font-weight: 300;
+  padding-top: 10px;
 }
+
+.stopName {
+  font-family: Optima, 'Belleza', sans-serif;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.trafficDir {
+  font-family: Optima, 'Belleza', sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  width: 59%;
+}
+
+/* table styles */
+.flexTable {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: : row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tableRow {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #888;
+  margin-bottom: 10px;
+}
+
+.routeCol {
+  width: 20%;
+}
+
+.destCol {
+  width: 59%;
+}
+
+.etaCol {
+  width: 20%;
+  margin-left: auto;
+  text-align: right;
+}
+
+.tabHead {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.route {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.busDir {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.dest {
+  font-size: 1.4em;
+}
+
+.minUntil {
+ font-size: 1.6em;
+ font-weight: 600;
+ display: inline-block;
+}
+
+.mins {
+  font-size: 1.6em;
+  font-weight: 300;
+  display: inline-block;
+}
+/* end table styles */
+
+.arrow {
+  width: 360px;
+  height: 25px;
+  position: fixed;
+  bottom: 68px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
 .downArrow {
   width: 10px;
   height: 5px;
-  padding: 10px 48.61%;
-  background-color: #888;
   display: inline-block;
+}
+
+.appBarBottom {
+  height: 2.5em;
+  width: 360px;
+  text-align: center;
+  position: fixed;
+  bottom: 4.8em;
 }
 
 .screenIndic {
@@ -208,11 +208,18 @@ body {
   display:inline-block;
 }
 
+.systemBarBottom {
+  height: 48px;
+  width: 360px;
+  position: fixed;
+  bottom: 0;
+}
+
 .sysContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4.8em;
+  height: 48px;
 }
 
 .triSysButton {
