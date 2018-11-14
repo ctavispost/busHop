@@ -34,99 +34,60 @@
     </h1>
   </div>
 
-  <div class="main"> <!-- start of table -->
-      <ul class="flexTable tabHead">
-        <li class="routeCol">Route</li>
-        <li class="destCol">Destination</li>
-        <li class="etaCol">ETA</li>
-      </ul>
-      <!-- buses -->
+  <div class="main"> <!-- buses -->
+      <div class="tabHeadContainer tabHead">
+        <p>route</p>
+        <p class="alignRight">eta</p>
+      </div>
       <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">60</span> <span class="busDir">(E)</span></li>
-        <li class="dest">Randolph/Harbor Dr</li>
-        <li class="etaCol"><span class="minUntil">4</span> <span class="mins">min</span></li>
+        <li class="routeSect"><span class="route">60</span> <span class="busDir">(E)</span></li>
+        <li class="etaSect"><span class="depart">12:34</span><span class="meridian">pm</span></li>
+        <li class="destSect">to <span class="dest">Randolph/Harbor Dr</span> every 20 min</li>
       </ul>
       <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">6</span> <span class="mins">min</span></li>
+        <li class="routeSect"><span class="route">124</span> <span class="busDir">(E)</span></li>
+        <li class="etaSect"><span class="depart">12:36</span><span class="meridian">pm</span></li>
+        <li class="destSect">to <span class="dest">Navy Pier</span> every 10 min</li>
       </ul>
       <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">151</span> <span class="busDir">(N)</span></li>
-        <li class="destCol dest">Devon/Clark</li>
-        <li class="etaCol"><span class="minUntil">7</span> <span class="mins">min</span></li>
+        <li class="routeSect"><span class="route">151</span> <span class="busDir">(N)</span></li>
+        <li class="etaSect"><span class="depart">12:37</span><span class="meridian">pm</span></li>
+        <li class="destSect">to <span class="dest">Devon/Clark</span> every 16 min</li>
       </ul>
       <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">J14</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">103rd/Stony Island</li>
-        <li class="etaCol"><span class="minUntil">9</span> <span class="mins">min</span></li>
+        <li class="routeSect"><span class="route">J14</span> <span class="busDir">(S)</span></li>
+        <li class="etaSect"><span class="depart">12:39</span><span class="meridian">pm</span></li>
+        <li class="destSect"> to <span class="dest">103rd/Stony Island</span> every 15 min</li>
       </ul>
       <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">10</span> <span class="mins">min</span></li>
+        <li class="routeSect"><span class="route">124</span> <span class="busDir">(S)</span></li>
+        <li class="etaSect"><span class="depart">12:40</span><span class="meridian">pm</span></li>
+        <li class="destSect">to <span class="dest">Navy Pier</span> every 10 min</li>
       </ul>
       <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">16</span> <span class="mins">min</span></li>
+        <li class="routeSect"><span class="route">6x</span></li>
+        <li class="etaSect depart reroute">reroute</li>
+        <li class="destSect">to <span class="dest">Jackson Park Express</span></li>
       </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">20</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">151</span> <span class="busDir">(N)</span></li>
-        <li class="destCol dest">Devon/Clark</li>
-        <li class="etaCol"><span class="minUntil">23</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">J14</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">103rd/Stony Island</li>
-        <li class="etaCol"><span class="minUntil">24</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">60</span> <span class="busDir">(E)</span></li>
-        <li class="destCol dest">Randolph/Harbor Dr</li>
-        <li class="etaCol"><span class="minUntil">24</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">26</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">30</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(E)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">36</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">151</span> <span class="busDir">(N)</span></li>
-        <li class="destCol dest">Devon/Clark</li>
-        <li class="etaCol"><span class="minUntil">39</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">J14</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">103rd/Stony Island</li>
-        <li class="etaCol"><span class="minUntil">39</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable tableRow">
-        <li class="routeCol"><span class="route">124</span> <span class="busDir">(S)</span></li>
-        <li class="destCol dest">Navy Pier</li>
-        <li class="etaCol"><span class="minUntil">40</span> <span class="mins">min</span></li>
-      </ul>
-      <ul class="flexTable lastRow">
-        <li class="routeCol"><span class="route">60</span> <span class="busDir">(E)</span></li>
-        <li class="destCol dest">Randolph/Harbor Dr</li>
-        <li class="etaCol"><span class="minUntil">44</span> <span class="mins">min</span></li>
-      </ul>
-    </div> <!-- end table -->
+      <div class="outOfService">
+        <h3 class="heading">Out of Service</h3>
+        <ul class="flexTable tableRow">
+          <li class="routeSect"><span class="route">4</span></li>
+          <li class="etaSect depart">out of service</li>
+          <li class="destSect">to <span class="dest">Cottage Grove</span> resumes 12:10am</li>
+        </ul>
+        <ul class="flexTable tableRow">
+          <li class="routeSect"><span class="route">20</span></li>
+          <li class="etaSect depart">out of service</li>
+          <li class="destSect">to <span class="dest">Madison</span> resumes 12:10am</li>
+        </ul>
+        <ul class="flexTable tableRow">
+          <li class="routeSect"><span class="route">157</span></li>
+          <li class="etaSect depart">out of service</li>
+          <li class="destSect">to <span class="dest">Streeterville/Taylor</span> resumes 6:00am</li>
+        </ul>
+      </div>
+    </div> <!-- end bus list -->
     <div class="arrow">
       <img class="downArrow" src="images/downArrow.svg">
     </div>

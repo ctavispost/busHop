@@ -1,7 +1,7 @@
 body {
   background-color: #fff;
   color: #000;
-  font-size: 10px;
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -9,18 +9,25 @@ body {
   box-sizing: border-box;
 }
 
-.main {
-  margin: 10px 5.5% 10px 5.5%;
-  padding-bottom: 40px;
-  height: calc(100vh - 230px);
-  overflow-y: scroll;
-  position:fixed;
-  top: 142px;
-  width: 88.9%;
-}
-
 .systemBars {
   background-color: #035511;
+  width: 100%;
+}
+
+.systemBarTop {
+  width: 100%;
+  background-image: url("../images/androidStatusBar.svg");
+  background-size: 3.75em;
+  background-position: 98.6%;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  color: #DAE6DC;
+  font-family: 'Roboto', sans-serif;
+  font-size: .75em;
+  weight: 700;
+  padding: .63em 0 .63em .31em;
   width: 100%;
 }
 
@@ -29,155 +36,167 @@ body {
   width: 100%;
 }
 
-.systemBarTop {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  background-image: url("../images/androidStatusBar.svg");
-  background-size: 6em;
-  background-position: 98.6%;
-  background-repeat: no-repeat;
-}
-
-.clock {
-  color: #DAE6DC;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  weight: 700;
-  padding: .7em 0 .7em .5em;
-  width: 100%;
-}
-
 .appBarTop {
-  position: sticky;
-  top: 24px;
-  box-shadow: 0 4px 4px -3px rgba(0,0,0,0.5);
-  margin-bottom: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);
+  margin-bottom: .625em;
 }
 
 .menuContainer {
   display: flex;
   align-items: center;
-  height: 6em;
+  height: 3.75em;
   justify-content: flex-end;
 }
 
 .hamburger {
-  margin-left: 2em;
-  width: 1.8em;
+  margin-left: 1.25em;
+  width: 1.13em;
   margin-right: auto;
 }
 
-.bell {
-  margin-right: .5em;
-  width: 1.7em;
+.bell { /* alert notification for stop closures, bus cancellations, etc: this would include reroutes and out-of-service-buses */
+  margin-right: .32em;
+  width: 1.1em;
   height: auto;
 }
 
 .query {
-  margin-left: .5em;
-  margin-right: 2em;
-  width: 1.9em;
+  margin-left: .32em;
+  margin-right: 1.25em;
+  width: 1.2em;
   height: auto;
 }
 
+/* info on stop */
 .stopInfo {
   width: 100%;
   padding: 0 5.6%;
-  position: sticky;
-  top: 8.5em;
   background-color: #fff;
 }
 
 .currentStop {
-  font-size: 1.4em;
+  font-size: .875em;
   line-height: 1.43
   font-weight: 300;
-  padding-top: 10px;
+  padding-top: .625em;
 }
 
 .stopName {
   font-family: Optima, 'Belleza', sans-serif;
-  font-size: 2.4em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .trafficDir {
   font-family: Optima, 'Belleza', sans-serif;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: 400;
   width: 59%;
 }
+/* end of info on stop */
 
-/* table styles */
+/* table */
+.main {
+  margin: 1.25em 5.5% 0.625em 5.5%;
+  padding: 0 .3125em 6.25vh .3125em;
+  height: calc(100vh - 16.4em);
+  overflow-y: scroll;
+  width: 88.9%;
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.22);
+}
+.tabHeadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+  width: 100%;
+}
+
+.tabHead {
+  font-size: .875em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.alignRight {
+  margin-left: auto;
+  text-align: right;
+}
+
 .flexTable {
   display: flex;
   display: -webkit-flex;
   flex-direction: : row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
 
 .tableRow {
-  padding-bottom: 10px;
+  padding-bottom: .75em;
   border-bottom: 1px solid #888;
-  margin-bottom: 10px;
+  margin-bottom: .75em;
 }
 
-.routeCol {
+.routeSect {
   width: 20%;
-}
-
-.destCol {
-  width: 59%;
-}
-
-.etaCol {
-  width: 20%;
-  margin-left: auto;
-  text-align: right;
-}
-
-.tabHead {
-  font-size: 1.4em;
-  font-weight: 300;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .route {
-  font-size: 1.6em;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .busDir {
-  font-size: 1.6em;
   font-weight: 400;
 }
 
-.dest {
-  font-size: 1.4em;
+.etaSect {
+  width: 79.9%;
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.minUntil {
- font-size: 1.6em;
- font-weight: 600;
- display: inline-block;
-}
-
-.mins {
-  font-size: 1.6em;
-  font-weight: 300;
+.depart {
+  font-weight: 600;
   display: inline-block;
 }
-/* end table styles */
+
+.destSect {
+  width: 100%;
+  font-size: .875em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .5em 0;
+}
+
+.dest {
+  font-weight: 600;
+}
+
+.reroute {
+  color: red;
+}
+
+.outOfService {
+  color: grey;
+}
+
+.heading {
+  font-size: 1.125em;
+  padding: 10px 0;
+}
+/* end bus list */
 
 .arrow {
   width: 100%;
-  height: 25px;
-  position: fixed;
-  bottom: 68px;
+  height: 1.563em;
   display: flex;
   background-color: #fff;
   align-items: center;
@@ -185,74 +204,49 @@ body {
 }
 
 .downArrow {
-  width: 10px;
-  height: 5px;
+  width: .8em;
+  height: .4em;
   display: inline-block;
 }
 
 .appBarBottom {
-  height: 2.5em;
+  height: 1.563em;
   width: 100%;
   text-align: center;
-  position: fixed;
-  bottom: 4.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .screenIndic {
-  width: 25px;
+  width: 1.56em;
   height: auto;
-  padding: 10px 0;
-  display:inline-block;
 }
 
 .systemBarBottom {
-  height: 48px;
+  height: 3em;
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 .sysContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
+  height: 3em;
   margin: 0 22.2%;
 }
 
 .triSysButton {
-  width: 16px;
-  height: auto;
+  width: 1em;
+  height: 1em;
 }
 
 .cirSysButton {
-  width: 16px;
-  height: auto;
+  width: 1em;
+  height: 1em;
 }
 
 .sqrSysButton {
-  width: 1.6em;
-  height: auto;
-}
-
-@media screen and (min-width: 575px) {
- .main {
-   margin-left: 27.4%;
-   margin-right: 27.4%;
-   width: 45%;
- }
- .stopInfo {
-   padding-left: 27.4%;
- }
-}
-
-@media screen and (min-width: 991px) {
-  .main {
-    margin-left: 34.9%;
-    margin-right: 34.9%;
-    width: 30%;
-  }
-  .stopInfo {
-    padding-left: 34.9%;
-  }
+  width: 1em;
+  height: 1em;
 }
