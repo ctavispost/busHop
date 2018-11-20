@@ -46,10 +46,11 @@ body {
   align-items: center;
   height: 3.75em;
   justify-content: flex-end;
+  margin: 0 5.5% 0 5.5%;
 }
 
 .hamburger {
-  margin-left: 1.25em;
+  /*margin-left: 1.25em;*/
   width: 1.13em;
   margin-right: auto;
 }
@@ -62,7 +63,7 @@ body {
 
 .query {
   margin-left: .32em;
-  margin-right: 1.25em;
+  /*margin-right: 1.25em;*/
   width: 1.2em;
   height: auto;
 }
@@ -70,7 +71,7 @@ body {
 /* info on stop */
 .stopInfo {
   width: 100%;
-  padding: 0 5.6%;
+  padding: 0 5.5%;
   background-color: #fff;
 }
 
@@ -97,11 +98,13 @@ body {
 
 /* table */
 .main {
-  margin: 1.25em 5.5% 0.625em 5.5%;
-  padding: 0 .3125em 6.25vh .3125em;
+  margin: 1.25em 0 0.625em 0;
+  padding: 0 5.5% 6.25vh 5.5%;
+  /*margin: 1.25em 5.5% 0.625em 5.5%;
+  padding: 0 .3125em 6.25vh .3125em;*/
   height: calc(100vh - 16.4em);
   overflow-y: scroll;
-  width: 88.9%;
+  /*width: 88.9%;*/
   box-shadow: 0 2px 2px 1px rgba(0,0,0,0.22);
 }
 .tabHeadContainer {
