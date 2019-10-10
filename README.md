@@ -1,4 +1,4 @@
-# busyBus
+# busHop
 An early frontend design project for a Bloc.io assignment. 
 This is a single screen from a larger transit mobile app concept.
 
